@@ -134,32 +134,13 @@ set ignorecase = ignora maiuscula ou minuscula
 
 colorscheme blue = define cor 
 
+:!"comando linux" = executa o comando e volta para o doc
 
+:r!"comando linux" = copia a saida do comando e retorna para o doc
 
+:r!pwd copia o caminho da execução
 
+-l retonar os numeros reais em divisoes (4/10=0 com -l 0.4000)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+:r !bc -l <<< operação matematica = função calculadora
 
