@@ -4,4 +4,4 @@ Conteúdo para manutenção, configuração e implementação de sistemas, espec
 ## VIM
 Comandos e atalhos
 
-[TatudoaquióH](https://github.com/henriqelol/SYSADMIN/blob/master/VIM)
+[TatudoaquióH](https://github.com/henriqelol/SYSADMIN/blob/master/VIM.md)
