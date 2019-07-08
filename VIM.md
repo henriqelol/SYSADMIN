@@ -1,128 +1,123 @@
-i = insert
+# Comandos, atalhos e configurações do VIM
 
-esc = sai modo inserção
+### Comandos de edição
 
-a = insere um caracter a frente
+`i` = insert
 
-I = insere no começo da linha
+`esc` sai modo inserção
 
-A = insere no final da linha 
+`a` = insere um caracter a frente
 
-o = insere na linha de baixo
+`I` = insere no começo da linha
 
-O = insere na linha acima
+`A` = insere no final da linha 
 
-S = apaga a linha e insere
+`o` = insere na linha de baixo
 
-#salvar
+`O` = insere na linha acima
 
-:w = apenas salva
+`S` = apaga a linha e insere
 
-:wq = salva e sai do arquivo
+### Salvar
 
-:q = apenas sai
+`:w` = apenas salva
 
-! = quando existe alguma alteração no documento
+`:wq` = salva e sai do arquivo
 
-#atalhos
+`:q` = apenas sai
 
-:x = salva e sai do arquivo
+`!` = quando existe alguma alteração no documento
 
-shift zz ou shift ZZ = salva e sai do arquivo
+### Atalhos
 
-yy = copia a linha 
+`:x` = salva e sai do arquivo
 
-p = colar linha 
+`shift zz` ou `shift ZZ` = salva e sai do arquivo
 
-y(numero de linhas) = copia a quantidade de linhas
+`yy` = copia a linha
 
-dd = recorta a linha
+`p` = colar linha 
 
-(numero de linha)dd = recorta a quantidade de linhas
+`y(numero de linhas)` = copia a quantidade de linhas
 
-ESC + v = ativa o modo visual e permite usar o cursor
+`dd` = recorta a linha
 
-#Modo visual
+`(numero de linha)dd` = recorta a quantidade de linhas
 
-Selecione o texto com o cursos
+`ESC + v` = ativa o modo visual e permite usar o cursor
 
-y = copia
-p = colar
+### Modo Visual
 
-crtl + v = copia verticalmente
+`y` = copia
+`p` = colar
 
-yw = copia uma palavra
-(numero de palavras)yw = copia numero de palavras
+`crtl + v` = copia verticalmente
 
-x = apaga um caracter (backspace) 
-X = apaga um caracter (delete) 
+`yw` = copia uma palavra
+`(numero de palavras)yw` = copia numero de palavras
 
-:w NOVO_NOME = salva com novo nome
+`x` = apaga um caracter (backspace) 
+`X` = apaga um caracter (delete) 
 
-:split OUTRO_ARQUIVO = divide a tela em duas
+`:w NOVO_NOME` = salva com novo nome
 
-CRTL WW = altera de tela
+`:split OUTRO_ARQUIVO` = divide a tela em duas
 
-:r ARQUIVO = copia o conteudo do para ARQUIVO o arquivo atual
+`CRTL WW` = altera de tela
 
-/palavra = busca palavra (cima para baixo)
+`:r ARQUIVO` = copia o conteudo do para ARQUIVO o arquivo atual
 
-n = proxima palavra da busca
+`/palavra` = busca palavra (cima para baixo)
 
-?palavra = busca palavra (baixo para cima)
+`n` = proxima palavra da busca
 
-:%s/palavraantiga/palavranova = altera todas as palavras
+`?palavra` = busca palavra (baixo para cima)
 
-:1,10 altera nestas linhas
+`:%s/palavraantiga/palavranova` = altera todas as palavras
 
-:%s/palavraantiga/palavranova/g =  muda uma por linha
+`:1,10` altera nestas linhas
 
-:e outroarquivo = sai do arquivo presente e vai para outro arquivo
+`:%s/palavraantiga/palavranova/g` =  muda uma por linha
 
-#reconhecendo sintaxe
-:syntax on or off = reconhece sintaxe
+`:e outroarquivo` = sai do arquivo presente e vai para outro arquivo
 
-:set number = aparece os numeros das linhas
+### Reconhecendo sintaxe
+`:syntax on or off` = reconhece sintaxe
 
-:set nonu
+`:set number` = aparece os numeros das linhas
 
-#abreviações
-:ab pal palavraquevocequerabreviar
+`:set nonu`
 
-inserindo texto (clicar pal) palabrasquevocequerabreviar
+### Abreviações
+`:ab pal palavraquevocequerabreviar` = abreviar palavras para uma menor - inserindo texto (clicar pal) palabrasquevocequerabreviar
 
-:set ai = auto identação
+`:set ai` = auto identação
 
-:set noai = retira auto identação
+`:set noai` = retira auto identação
 
-:set ic = ignore case
+`:set ic` = ignore case
 
-:set noic = 
+`:set noic` = retira ignore case 
 
-:set bg=dark or bg=light = background = dark ou light 
+`:set bg=dark` or `bg=light` == `background=dark` ou `background=light` = altera cor do background 
 
-:set tabstop=4
+`:set tabstop=4` = aumenta o espaço do tab para 4
 
-:set showmatch = mostra onde esta fechando as experessoes (chave. colchete, parentes)
+`:set showmatch` = mostra onde esta fechando as experessoes (chave. colchete, parentes)
 
-:.,$!sort = ordena a lista por ordem alfabetica
+`:.,$!sort `= ordena a lista por ordem alfabetica
 
-:.,$!sort pr -2t = ordena e divide em 2 colunas/tabelas
+`:.,$!sort pr -2t` = ordena e divide em 2 colunas/tabelas
 
-u = desfaz as alterações no arquivo
+`u` = desfaz as alterações no arquivo
 
-crtl r = refaz
+`crtl r` = refaz
 
-#Opções ativas no VIM
-vim ~/.vimrc
+### Opções ativas no VIM
+As alterações são feitas no arquivo .vimrc `vim ~/.vimrc`
 
-# Número de linhas
-set number
-
-# Cor de sintaxe
-syntax on
-
-# Correção de tabs
+`set number` = seta numero lateral
+`syntax on` = permite ativar a sintaxe
 set shiftwidth=4
 set expandtab
 set softtabstop=4
@@ -132,15 +127,19 @@ set cursorline = destaca linha
 set hlsearch = destaca palavra na pesquisa
 set ignorecase = ignora maiuscula ou minuscula 
 
-colorscheme blue = define cor 
+`colorscheme blue` = define cor 
 
-:!"comando linux" = executa o comando e volta para o doc
+`:!"comando linux" = executa o comando e volta para o doc
 
-:r!"comando linux" = copia a saida do comando e retorna para o doc
+`:r!"comando linux"` = copia a saida do comando e retorna para o doc
 
-:r!pwd copia o caminho da execução
+`:r!pwd` =  copia o caminho da execução
 
--l retonar os numeros reais em divisoes (4/10=0 com -l 0.4000)
+`-l` retonar os numeros reais em divisoes (4/10=0 com -l 0.4000)
 
-:r !bc -l <<< operação matematica = função calculadora
+`:r !bc -l <<< operação matematica` = função calculadora
 
+
+### Upando
+
+`https://github.com/paulojp-dev/my-vim`
