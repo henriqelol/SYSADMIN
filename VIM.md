@@ -24,6 +24,8 @@
 
 `/palavra` = busca palavra (cima para baixo)
 
+`/\cpalavra` = busca palavra eliminando o case sensitive (cima para baixo)
+
 `?palavra` = busca palavra (baixo para cima)
 
 `n` = proxima palavra da busca
