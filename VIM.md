@@ -155,3 +155,23 @@ As alterações são feitas no arquivo .vimrc `vim ~/.vimrc`
 ### Upando
 
 `https://github.com/paulojp-dev/my-vim`
+
+### Terminator
+
+Instalar `apt-get install terminator`
+
+__Atalhos__
+
+`Ctrl-Shift-E` Divide o terminal verticalmente
+
+`Ctrl-Shift-O` Divide o terminal horizontalmente
+
+`Ctrl-Shift-W` Fecha o terminal ativo
+
+`Ctrl-Shift-P` Muda o foco para o terminal anterior
+
+`Ctrl-Shift-N` Muda o foco para o terminal seguinte
+
+`Ctrl-Shift-Q` fecha a janela do Terminator
+
+`F11` Põe o terminator em fullscreen.
