@@ -175,3 +175,5 @@ __Atalhos__
 `Ctrl-Shift-Q` fecha a janela do Terminator
 
 `F11` Põe o terminator em fullscreen.
+
+https://blogdoatila.wordpress.com/2013/05/15/lista-bem-completa-de-comandos-linux/
